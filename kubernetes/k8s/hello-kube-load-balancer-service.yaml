@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kube-load-balancer-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    component: web
+# As you can see there are no labels field inside metadata here. That's because a service selects other objects using labels, other objects don't select a service.
