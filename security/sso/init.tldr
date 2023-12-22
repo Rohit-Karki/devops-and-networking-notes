@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 1982.262349500209,
-      "y": 454.3040743889502,
-      "lastActivityTimestamp": 1702751311142,
+      "x": 765.050396083514,
+      "y": -243.6041034257287,
+      "lastActivityTimestamp": 1702751528434,
       "meta": {}
     },
     {
@@ -87,9 +87,11 @@
       "typeName": "camera"
     },
     {
-      "editingShapeId": null,
+      "editingShapeId": "shape:eOwlZoRaa7GOUBUxkX5QP",
       "croppingShapeId": null,
-      "selectedShapeIds": [],
+      "selectedShapeIds": [
+        "shape:eOwlZoRaa7GOUBUxkX5QP"
+      ],
       "hoveredShapeId": null,
       "erasingShapeIds": [],
       "hintingShapeIds": [],
@@ -266,7 +268,7 @@
         "color": "black",
         "size": "m",
         "w": 508.28626375794124,
-        "text": "What OPENID adds\n\nID TOKEN\nUserinfo  for getting more information about the user\nstandarized implementation\nscopes",
+        "text": "What OPENID adds\n\nID TOKEN\nUserinfo  for getting more information about the user\nstandarized implementation\nscopes\n\nWe get back the access token and ID token and can be immediately consumed by the application to understand the who the user is that just logged in.\nTo get more info about the user use that access token.\n",
         "font": "draw",
         "align": "start",
         "autoSize": false,

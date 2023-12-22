@@ -1,0 +1,487 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{CCNA 200-301}\\ Notes}
+\author{\huge{Rohit Raj Karki}}
+\date{}
+
+\begin{document}
+	\maketitle
+	\newpage% or \cleardoublepage
+	% \pdfbookmark[<level>]{<title>}{<dest>}
+	\pdfbookmark[section]{\contentsname}{toc}
+	\tableofcontents
+	\pagebreak
+
+	\chapter{Networks Devices}
+	\section{Computer Network}
+	A computer network is a digital telecommunications network which allows nodes
+	to share resources.
+
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt
+	\begin{tikzpicture}[x=0.75pt, y=0.75pt, yscale=-1, xscale=1]
+		%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+		%Shape: Circle [id:dp5361374648292709]
+		\draw (34.54,160.73) .. controls (34.54,128.85) and (60.38,103) .. (92.27,103)
+		.. controls (124.15,103) and (150,128.85) .. (150,160.73) .. controls (150,192.62)
+		and (124.15,218.46) .. (92.27,218.46) .. controls (60.38,218.46) and (34.54,192.62)
+		.. (34.54,160.73) -- cycle ;
+		%Right Arrow [id:dp06422841843475346]
+		\draw (47,153.87) -- (64.76,153.87) -- (64.76,149) -- (76.6,158.73) -- (64.76,168.46)
+		-- (64.76,163.6) -- (47,163.6) -- cycle ;
+		%Right Arrow [id:dp6209855052918765]
+		\draw (133.69,160.3) -- (115.94,160.65) -- (116.03,165.52) -- (104,156.03) --
+		(115.65,146.06) -- (115.74,150.93) -- (133.5,150.57) -- cycle ;
+		%Right Arrow [id:dp5317728353939126]
+		\draw (88.23,202.63) -- (87.88,184.87) -- (83.01,184.97) -- (92.51,172.93) --
+		(102.47,184.58) -- (97.61,184.68) -- (97.96,202.43) -- cycle ;
+		%Right Arrow [id:dp6187687437252627]
+		\draw (93.52,117.88) -- (93.69,135.64) -- (98.56,135.6) -- (88.94,147.53) --
+		(79.1,135.79) -- (83.96,135.74) -- (83.79,117.98) -- cycle ;
+		%Rounded Rect [id:dp1889585755540648]
+		\draw (189.6,138.69) .. controls (189.6,130.58) and (196.18,124) .. (204.29,124)
+		-- (259.91,124) .. controls (268.02,124) and (274.6,130.58) .. (274.6,138.69)
+		-- (274.6,182.77) .. controls (274.6,190.88) and (268.02,197.46) .. (259.91,197.46)
+		-- (204.29,197.46) .. controls (196.18,197.46) and (189.6,190.88) .. (189.6,182.77)
+		-- cycle ;
+		%Right Arrow [id:dp7169185378424765]
+		\draw (221.69,152.3) -- (203.94,152.65) -- (204.03,157.52) -- (192,148.03) --
+		(203.65,138.06) -- (203.74,142.93) -- (221.5,142.57) -- cycle ;
+		%Right Arrow [id:dp5328960964502949]
+		\draw (222.08,178.76) -- (204.32,179.11) -- (204.42,183.98) -- (192.39,174.48)
+		-- (204.03,164.52) -- (204.13,169.38) -- (221.89,169.03) -- cycle ;
+		%Right Arrow [id:dp7192082508077764]
+		\draw (234.8,160.73) -- (252.55,161.18) -- (252.68,156.32) -- (264.27,166.35)
+		-- (252.18,175.78) -- (252.31,170.91) -- (234.55,170.46) -- cycle ;
+		%Right Arrow [id:dp4880205307308063]
+		\draw (234.9,133.19) -- (252.65,132.8) -- (252.55,127.94) -- (264.6,137.41) --
+		(252.97,147.4) -- (252.86,142.53) -- (235.11,142.92) -- cycle ;
+	\end{tikzpicture}
+
+	Two PCs connected with eachother is called networks.Now that they are connected
+	with eachother they can share the data with eachother. \textbf{Client}\\ A
+	Client is a device that accesses a service available by a server. \\ \textbf{Server}\\
+	A device that provides function or services for clients. A server can also be
+	a client. \nt{The same device can be a client in some situations, and a server in other situations.}
+	Typically you don't connect PCs or severs directly to eachother. You aggregate
+	the connections to a device called a switch. Switches have a lot of interfaces
+	for you to connect end hosts to. Switches are used to forward netork with a LAN
+	a local area network. We have one LAN on the left and one LAN ont the right. The
+	hosts within each LAN(such as network printer, pcs) can send data from one another.
+	for example PC1 and PC2. These switches cannot cannot with eachother.\\
+	\begin{itemize}
+		\item have many network interfaces/ports for end hosts to connect to (usually
+			24+).
+
+		\item provide connectivity to hosts with the same LAN.
+
+		\item donot provide connectivity between LANS/over the internet. We need
+			another type of device called router.
+	\end{itemize}
+	\textbf{Router} \\ When end hosts in the New York Branch LAN want to
+	communicate with end hosts in the Tokyo branch LAN , they will send the data
+	to their router R1, which will then forward the data to the Tokyo Branch via internet.\\
+	So, lets suppose a scenario when the PC in LAN1 wants a data from server1 of
+	tokyo branch. It will request the data via a switch S1 which inturn connect with
+	the router R1 and that router connects with the internet and the router R2 via
+	switch S2 which connects the server and the data flow in the reverse order.\\ Types
+	of Router\\
+	\begin{itemize}
+		\item ISR 1000
+
+		\item ISR 900
+
+		\item ISR 4000
+	\end{itemize}
+	% \begin{itemize}
+	%     \item
+	% \end{itemize}
+	\textbf{Firewall}\\ Firewall are specially network security that controls
+	network traffic entering an exiting your network. Firewalls can be placed 'outside'
+	of your router.\\
+	\begin{itemize}
+		\item monitor and control network traffic based on configured rules
+
+		\item can be placed inside the network or outside the network.
+
+		\item are known as 'Next-Generation Firewalls when thry include more modern
+			and advanced filtering capabilties.
+	\end{itemize}
+	What about the firewall on your computer?\\
+	% Types of Firewalls\\
+	\textbf{Types of switches}\\ 1. Catalyst 9200 \nt{RJ = Registered Jack}
+	\textbf{Ethernet}\\ \textbf{Bits and bytes}\\ Bits : Series of 0's or 1's. When
+	communicating across a copper network cable,a variation of the electrical signal
+	is assumed as 0's or 1's. \\ Bytes: Series of 8 0's and 1's. \\ Speed is
+	measured in bits per second.(Kbps,Mbps,Gbps,etc not bytes per second.) in Harddisk
+	data is transmitted in the bytes per second. \textbf{Ethernet Standards}\\
+	defined in IEEE 802.3 standard in 1983.
+	\begin{itemize}
+		\item 10Mbps Ethernet 10BASE-T\\
+
+		\item 1000Mbps Fast Ethernet 100BASE-T\\
+
+		\item 1Gbps Gigabit Ethernet 1000BASE-T\\
+
+		\item 10Gbps 10 Gig Ethernet 10GBASE-T\\
+	\end{itemize}
+	\textbf{UTP cables } Unshielded Twisted Pair : Un shieled means that the wires
+	have no metallic shield which can make them vulnerable to electrical interferences.
+	The twist actually helps protect against electromagentic interference or EMI. Four
+	pairs of wires twisted with each other.\\ 10BASE-T ans 100BASE-T = 2 pairs (4
+	wires)\\ 1000BASE-T ans 1GBASE-T = 4 pairs (8 wires)\\ Routers transmits data on
+	pin 1 and 2 and receive data on pins 3 and 6(this are same in PCs) but switch
+	is exactly opposite.\\ Communication in between the routers donot work in this
+	case .\\ \textbf{StraightThrough cable}\\ A straight through cable connects pin1
+	to pin1 ,pin2 to pin2,pin3 to pin3 and etc.\\ \textbf{Crosscable cable}\\ Pin1
+	connects to pin 3 and Pin2 connects to Pin 6 on the other end and Pin3
+	connects to pin1 and Pin 6 connects to pin 2 on the left side.\\ \textbf{Auto
+	MDI X}\\ Auto MDI X allows devices to automatically detect which pins their
+	neighbour is transmitting data on and then adjust themselves to receive data
+	on the other pins.\\
+
+	\textbf{How to connect to a cisco device(console) }\\ Router\> = user EXEC
+	mode \\ Router\# = privileged EXEC mode \\ Router(config)\# = Global configuration
+	mode \\ Router\>enable = used to enter privileged EXEC mode \\ Router\#configure
+	terminal = used to enter global configuration mode \\ Router(config)\# enable password
+	<password>= configures a password to protect privileged exec mode\\ Router(config)\#
+	service password -encryption = encrypts the enable password \\ Router(config)\#
+	enable secret <password> = configures a more secure ,always -encypted enable
+	password\\ Router(config) \# run privleged -exec level command from global configuration
+	mode \\ Router(config) \#no command = removes the command\\ Router(config) \#show
+	running-config = displays the current ,a ctive configuration file \\ Router(config)
+	\#show startup-config = displays the saved confiuration file which will be loaded
+	if the device is restarted \\ Router(config) \#write = saves the configuration
+	\\ Router(config) \# write memory = saves the configuration \\ \textbf{Ethernet
+	Frame}\\
+	\begin{itemize}
+		\item The minimum size for an Ethernet frame (Header + Payload + trailer)is
+			64 bytes.
+
+		\item 64bytes -18(header + trailer size )= 46 bytes
+
+		\item therefore the minimum payload is less than 46 bytes .
+
+		\item if the payload is less than 46 bytes , padding bytes are added.
+	\end{itemize}
+	\textbf{Mac Address}\\ 6 byte (48) bit physical address that is assigned to
+	the device when the device is made. AKA burned in address. The mac address is
+	globally unique.\\ The first 3 byte are the OUI (organizational unique identifier)
+	which is assigned to the company making the device.\\ \nt{Unicast Frame\\ The frame that is destined for only one single target.\\ Unknown unicast frame = flood to all other interfaces except the one which sent it. }
+	\nt{Dynamic or dynamically learned mac address are removed. The mac address are removed after five minutes of inactivity}
+	\textbf{ARP}
+	\begin{itemize}
+		\item ARP stands for 'Address Resolution Protocol'
+
+		\item ARp is used to discover the layer 2 address (MAC address) of a known IP
+			address
+
+		\item ARP request is unknown unicast frame
+
+		\item ARP request is unicast frame
+	\end{itemize}
+
+	\textbf{Network Layer}
+	\begin{itemize}
+		\item Provides connectivity between different end hosts on different networks
+			(i.e outside the network ).
+
+		\item Provides logical addressing
+
+		\item Provides path selection between sources and destination addresses
+
+		\item Routers operate at Layer 3
+	\end{itemize}
+
+	\textbf{IPv4 Addressing}\\ The IP address is written in dotted decimal.It is
+	splitted into four octets and then written in dotted decimal for our easiness.
+	Since IP address is of 32 bits from which first 24 bits specify network portion
+	and remaining 8 bytes specify hosts address.\\ So 192.168.1.254/24 means 192.168.1
+	represent network portion and 254 represent host portion.\\ \textbf{Loop back
+	Address }
+	\begin{itemize}
+		\item Address range 127.0.0.0-127.255.255.255.
+
+		\item Used to test the network stack on the local device.
+	\end{itemize}
+	\textbf{TTL(Time to Live)} \\ In practice, indicates a 'hopcount ': each packet
+	arrives at a router,the router decreases TTL by 1.\\
+	\begin{itemize}
+		\item Value of 6 :TCP
+
+		\item Value of 17 :UDP
+
+		\item Value of 1 :ICMP
+
+		\item Value of 89 :OCPF(dynamic routing protocol)
+	\end{itemize}
+	\textbf{Routing Fundamentals} \\ Routing is the process that routers use to determine
+	the path that IP packets should take over a network to reach theri destination.
+	\begin{itemize}
+		\item WHen routers receive packets, they look in the routing table to find
+			the best route to forward that packet.
+
+		\item Routers store routes to all of their known destinations ina routing table.
+	\end{itemize}
+	A route tells the router : to send a packet to destination X you should send
+	the packet to next hop Y \\ or if the setination is directly connected to the
+	touter ,send the packet directly to the destination\\ or if the destination is
+	the routers own IP address receive the packet dor yourself(dont forward it) When
+	you configure an IP address on an interface and enable the interface , two routes
+	are automatically added to the routing table Connected route A route to the network
+	connected to the internet\\ i.e if the interface' IP is 192.168.1.1/24 the route
+	will be to 192.168.1.0/24\\ Tells the router "To send a packet to a destination
+	in this network, send it out of the interface specified in the route\\ Local route
+	A route to the exact IP address configured in the interface. If the router
+	receive a packet and it doesnot have a route that matches the packet
+	destination it will drop the packet.\\ \textbf{The Life of a packet} \\ The source
+	is 192.168.1.1 pc1's ip address and the destination is 192.168.4.1 pc4's ip address.
+	because pc1's ip address is in the range of 192.168.1.1 so it notices that the
+	the ip address 192.168.4.1 is in a different network so it knows that it needs
+	to send the packet to its default gateway which is R1. SO it is necessary for ARP
+	request to find the mac of destination, So it will send a broadcast to all the
+	interfaces of the switch S1 except the one that sent.
+
+	\chapter{Subnetting}
+	\section{CIDR(Classless Inter-Domain Routing)}
+	IANA assignes IPv4 addresses/network to company based on their size. Howerver,
+	this leads to wastage of IPs.
+	\section{Subnet Mask}
+
+	\chapter{VLANS}
+	\section{Introduction}
+	VLANs are configured on switches on a per interface basis.They logically
+	separate end hosts at Layer 2. \\ Switches don't forward traffic directly
+	between hosts in different VLANS as well as in same VLANS. \\ Lots of unnecessary
+	broadcast traffic can reduce network performance.\\ Even within the same office
+	you want to limit who has access to what. You can apply security policies on a
+	router/firewall. because this is one LAN ,PCs can reach each other directly
+	without traffic passing through the router.\\ So, even if you configure security
+	policies,they won't have any effect A switch willn't forward traffic between VLANs,
+	including broadcast/unknown unicast traffic.\\ Vlans 1,1002-1005 exists by
+	default and cannot be deleted.\\ Although we separated the three departments
+	into three subnets (layer3) they are still in the same broadcast domain (Layer
+	2).\\ The router is used to route between VLANs. The switch does not perform inter
+	VLAN routing.\\ VLANs logically separate end hosts at Layer 2.\\ An access
+	port is a switch port which belongs to a single VLAN and usually connects to
+	end hosts like PCs.It gives end host access to internet.\\ Switch Ports which
+	carry multiple VLANs are called trunk ports.
+	\begin{itemize}
+		\item interface range g2/0 -2
+
+		\item switchport mode access
+
+		\item switchport access vlan 20
+
+		\item Access VLAN doesn'ot exist. Creating Vlan 10
+	\end{itemize}
+	\begin{itemize}
+		\item interface range g3/0 -3
+
+		\item switchport mode access
+
+		\item switchport access vlan 30
+
+		\item Access VLAN doesn't exist. Creating Vlan 10
+	\end{itemize}
+	\section{Trunk Ports}
+	\textbf{What is trunk ports or Tagged Port?}\\ The Switches will tag all
+	frames that they send over a trunk link. This allow the receiving switch to know
+	which VLAN the frame belongs to. IEEE 802.1Q is an industry standard protocol created
+	by IEEE. The 802.1Q tag is inserted between the source and type/length fields of
+	the ethernet header which is of length 32 bits. VID Vlan id identies the vlan
+	the frame belongs to . 12 bits in length = 4096 total vlans range of 0-4095
+	Vlan 0 and 4095 are reserved and can't be used.\\ The range of VLANs (1-4094)
+	is divided into two sections
+	\begin{itemize}
+		\item Normal VLANs 1-1005
+
+		\item Extended VLANs 1005-4094
+	\end{itemize}
+	A standard layer 2 switch will only forward traffic in the same VLAN. IT will not
+	forward traffics betwenn VLANs.\\
+        
+        
+
+
+	\section{SVI Switch Virtutal Interface}
+	Multi layer Switch or Layer 3 switches
+
+	\section{router on a stick (RAOS)}
+
+	\chapter{LAN}
+	It is the connection within the network where internet cannot be accessed.
+
+	\section{2 Tier LAN architecture}
+	The two tier LAN design consists of two hierachical layers:
+	\begin{itemize}
+		\item Access Layer
+
+		\item Distribution Layer
+	\end{itemize}
+
+	Also called a Collapsed Core design because it omits a layer that is found in the
+	Three tier design :the Core layer \textbf{Access Layer}
+	\begin{itemize}
+		\item the layer that end hosts connect to (PCs printers,camers,etc.)
+
+		\item typically access layer switches have lots of ports for end hosts to connect
+			to
+
+		\item WoS marking is typically dine her
+
+		\item Security services like port security, DAI are typically performed here.
+	\end{itemize}
+
+	\textbf{Distribution Layer}
+	\begin{itemize}
+		\item aggregates connections from the access layer switches
+
+		\item typically is the border between layer 2 and layer 3
+	\end{itemize}
+	The distribution layer uses OSPF protocol and access layer uses the spanning tree
+	protocol The access layer connects to the distribution layer switches are Layer
+	2 connections, and then end hosts use the SVIs on the distribution layer
+	switches as their default gateways. The distribution layer is used to connect to
+	services such as Internet, WAN, etc.
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{image.png}
+		\caption{2 Tier LAN}
+		\label{fig:enter-label}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{2tier.png}
+		\caption{2 tier LAN}
+		\label{fig:enter-label}
+	\end{figure}
+	Connections between Distribution Switches are Layer 3. Routing information can
+	be shared via OSPF for example In large LAN networks with many Distribution Layer
+	switches(for example in separate buildings) the number of connection required
+	between Distribution Layer switches grows rapidly.
+
+	\section{3 Tier LAN architecture}
+	The three tier LAN design consists of three hierarchical layers.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{3tierlan.png}
+		\caption{Enter Caption}
+		\label{fig:enter-label}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{3tierlan1.png}
+		\caption{Enter Caption}
+		\label{fig:enter-label}
+	\end{figure}
+
+	\section{Spine Leaf Architecture}
+	IT is used in data center. Data centers are dedicated spaces/buildings used to
+	store computer systems such as servers and network devices. Traditional Data
+	center designs used a three tier architecture like we just covered. This worked
+	well when most traffic in the data center was North-South. With the precedence
+	of virtual servers, applications are oftern deployed in a distributed manner(across
+	multiple physical servers) which increases the amount of East-West traffic in
+	the data center.The traditional design led to the bottleneck in bandwidth and
+	speed. There are spine switches and leaf switches, and here are the basic
+	rules about spine-leaf architecture. Every leaf switch is connected to every spine
+	switch. If you look at the diagram below, there are three spine switches, and
+	each leaf switch has three uplinks, one to each spine switch. Therefore, every
+	spine switch is connected to every leaf switch too. However, leaf switches do not
+	connect to other leaf switches, and spine switches do not connect to other
+	spine switches. Finally, end hosts, for example servers, only connect to leaf
+	switches. They are like the ‘access layer’ of the spine-leaf architecture.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{spinceleaf.png}
+		\caption{Enter Caption}
+		\label{fig:enter-label}
+	\end{figure}
+
+	\section{SOHO Networks}
+
+	Small office/Home Office (SOHO) refers ti the office of a small company or a
+	small home office with the few devices. ->Does not have to be an actual home office,
+	if your home has network connected to the internet considered a SOHO network. SOHO
+	networks don't have complex needs so all networking functions are typically provided
+	by a single device often called a home router or wireless router. This device
+	can serve as a
+	\begin{itemize}
+		\item Router
+
+		\item Switch
+
+		\item Firewall
+
+		\item Wireless access Point
+
+		\item Modem
+	\end{itemize}
+
+	\chapter{Wireless LAN}
+
+	\section{Wireless Lan Controller}
+	It is an appliance which centralizes all the control of the access points. By
+	using WLCs all management are transferred from APs to the WLCs such as
+	authentication,and more. To change the config of APs WLC are used to use to change
+	all at once.It can also provide the statistics and performance metrics. The
+	APs then are called Lightweight APs which only handle the forwarding the
+	traffic.
+
+	\section{Wireless Architecture}
+
+	\subsection{Wireless}
+	\begin{itemize}
+		\item It's possible for an AP to provide the multiple wireless LANS,each with
+			unique SSIDs.
+
+		\item Each WLAN is mapped to a separate VLAN and connected to the wired network
+			via a trunk.
+
+		\item Each WLAN uses a unique BSSID, usually by incrementing the last digit
+			of the previous BSSID.
+	\end{itemize}
+	Additional AP operational Modes beyond one. An AP in repeater mode can be used
+	to extend the range of a BSS. The repeater will simply re transmit any signal it
+	receives from the AP. A repeater with a single radio must operate on the same
+	channel as the AP.
+
+	A workgroup bridge operates as a wireless client of another AP and can be used
+	to connect wired devices to the wireless network.
+
+	802.11 Frame Format
+
+	Addresses: Up to four address can be present. Which addresses are present anf their
+	order dependes on the message type.
+	\begin{itemize}
+		\item Destination Address: Final recipient of the frame.
+	\end{itemize}
+	\begin{itemize}
+		\item Source address :Original sender if the frame
+
+		\item Transmitter address Immediate sender of the frame
+
+		\item Recipient frame: Immediate receiver of the frame.
+	\end{itemize}
+
+	Access Point bridge traffic between wireless stations and other devices. There
+	are three 802.11 connection states.
+	\begin{itemize}
+		\item Not authenticated, not associated.
+
+		\item Authenticated, not associated.
+
+		\item Authenticated, associated.
+	\end{itemize}
+
+	\subsection{Lightweight APs}
+	\begin{itemize}
+		\item
+	\end{itemize}
+\end{document}
