@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowGetObject",
+      "Action": "s3:GetObject",
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::mydata/*"
+    }
+  ],
+  "Comment": "This policy allows the user or group that the policy is attached to retrieve objects from the mydata bucket. The Resource element specifies the Amazon Resource Name (ARN) of the bucket, and the /* at the end of the ARN allows access to all objects in the bucket."
+}
