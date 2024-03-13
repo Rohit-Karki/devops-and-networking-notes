@@ -1,7 +1,7 @@
 # The Resource Behavior page describes the general lifecycle for resources. Some details of that behavior can be customized using the special nested lifecycle block within a resource block body:
 resource "azure_resource_group" "example"{
     lifecycle{
-        create_and_destroy
+        create_and_destroy = true
     }
 }
 

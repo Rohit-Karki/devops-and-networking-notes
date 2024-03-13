@@ -1,0 +1,199 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 1,
+		"storeVersion": 4,
+		"recordVersions": {
+			"asset": {
+				"version": 1,
+				"subTypeKey": "type",
+				"subTypeVersions": {
+					"image": 3,
+					"video": 3,
+					"bookmark": 1
+				}
+			},
+			"camera": {
+				"version": 1
+			},
+			"document": {
+				"version": 2
+			},
+			"instance": {
+				"version": 24
+			},
+			"instance_page_state": {
+				"version": 5
+			},
+			"page": {
+				"version": 1
+			},
+			"shape": {
+				"version": 3,
+				"subTypeKey": "type",
+				"subTypeVersions": {
+					"group": 0,
+					"text": 1,
+					"bookmark": 2,
+					"draw": 1,
+					"geo": 8,
+					"note": 5,
+					"line": 4,
+					"frame": 0,
+					"arrow": 3,
+					"highlight": 0,
+					"embed": 4,
+					"image": 3,
+					"video": 2
+				}
+			},
+			"instance_presence": {
+				"version": 5
+			},
+			"pointer": {
+				"version": 1
+			}
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 183.3430177451819,
+			"y": 1210.9326833998161,
+			"lastActivityTimestamp": 1710347922190,
+			"meta": {}
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "SSL/TLS",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"x": 384.2044741310093,
+			"y": -28.542128545208474,
+			"z": 0.47784549502721213,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"editingShapeId": "shape:-KkUjS57Gngdm_VdWA5zf",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:-KkUjS57Gngdm_VdWA5zf"
+			],
+			"hoveredShapeId": "shape:-KkUjS57Gngdm_VdWA5zf",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:horizontalAlign": "start"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 720,
+				"h": 755.2000122070312
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"canMoveCamera": true,
+			"isFocused": true,
+			"devicePixelRatio": 1.25,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"x": -238.72500610351562,
+			"y": 141.60000228881836,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:2j0Jagr1G793m9SgrzPZa",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 645.4500122070312,
+				"text": "TLS/SSL\nSSL is a secure communication protocol.\nTLS/SSL creates a secure tunnel across the internet.",
+				"font": "draw",
+				"align": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": -245.0428551722332,
+			"y": 255.60910948937277,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:-KkUjS57Gngdm_VdWA5zf",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1403.9500732421875,
+				"text": "How do SSL protect your data?\nData sent across the wire can be captured by anyone in the middle.\n\nPurpose of SSL/TLS is to protext the data in three ways:\n\nConfidentiality: Data is only accessible by client and server\nIntegrity: Data is not modified between client and server\nAuthetication: Client/Server are indeed who they say they are\n\nThe Client is a one who is initiating the TLS Handshake.\nWhen a client visits bank.com the bank.com provides a certificate and says i am bank.com and you can trust me.\nThen the client asks the CA to check for the bank.com certificate \n\nCertificate Authority(CA)\nGoverning Entity that issues certificates.\nTrusted by client and server\nProvides trust anchor\n  If we trust the CA, we trust what the CA trusts \n\n\n\n11. Server generates a certificate signing request(CSR)\n    CSR contsins \n11. Client wants to connect to the server securely.\n    Web Browsers already have CA Certificates installed.\n12. Client requests Server's certificate\n    Client validates Certificate is legitimate\n    Client validates that server truly owns certicate \n13. Client validates Server's Certifiacte in the SSL/TLS handshake.\n14. SSL/TLS Hanshake produces Session Keys:\n    Symmetric Encryption\n    ",
+				"font": "draw",
+				"align": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a2",
+			"typeName": "shape"
+		}
+	]
+}
