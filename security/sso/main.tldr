@@ -66,9 +66,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 183.3430177451819,
-			"y": 1210.9326833998161,
-			"lastActivityTimestamp": 1710347922190,
+			"x": -530.7306846690212,
+			"y": 1235.6846905263487,
+			"lastActivityTimestamp": 1711888038175,
 			"meta": {}
 		},
 		{
@@ -79,20 +79,18 @@
 			"typeName": "page"
 		},
 		{
-			"x": 384.2044741310093,
-			"y": -28.542128545208474,
-			"z": 0.47784549502721213,
+			"x": 898.6567554115019,
+			"y": -252.80998579071388,
+			"z": 0.4218238643297175,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"editingShapeId": "shape:-KkUjS57Gngdm_VdWA5zf",
+			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:-KkUjS57Gngdm_VdWA5zf"
-			],
-			"hoveredShapeId": "shape:-KkUjS57Gngdm_VdWA5zf",
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -120,8 +118,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 720,
-				"h": 755.2000122070312
+				"w": 1488,
+				"h": 754.4000244140625
 			},
 			"insets": [
 				false,
@@ -156,7 +154,6 @@
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:2j0Jagr1G793m9SgrzPZa",
 			"type": "text",
 			"props": {
 				"color": "black",
@@ -170,6 +167,7 @@
 			},
 			"parentId": "page:page",
 			"index": "a1",
+			"id": "shape:2j0Jagr1G793m9SgrzPZa",
 			"typeName": "shape"
 		},
 		{
@@ -179,13 +177,12 @@
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:-KkUjS57Gngdm_VdWA5zf",
 			"type": "text",
 			"props": {
 				"color": "black",
 				"size": "m",
 				"w": 1403.9500732421875,
-				"text": "How do SSL protect your data?\nData sent across the wire can be captured by anyone in the middle.\n\nPurpose of SSL/TLS is to protext the data in three ways:\n\nConfidentiality: Data is only accessible by client and server\nIntegrity: Data is not modified between client and server\nAuthetication: Client/Server are indeed who they say they are\n\nThe Client is a one who is initiating the TLS Handshake.\nWhen a client visits bank.com the bank.com provides a certificate and says i am bank.com and you can trust me.\nThen the client asks the CA to check for the bank.com certificate \n\nCertificate Authority(CA)\nGoverning Entity that issues certificates.\nTrusted by client and server\nProvides trust anchor\n  If we trust the CA, we trust what the CA trusts \n\n\n\n11. Server generates a certificate signing request(CSR)\n    CSR contsins \n11. Client wants to connect to the server securely.\n    Web Browsers already have CA Certificates installed.\n12. Client requests Server's certificate\n    Client validates Certificate is legitimate\n    Client validates that server truly owns certicate \n13. Client validates Server's Certifiacte in the SSL/TLS handshake.\n14. SSL/TLS Hanshake produces Session Keys:\n    Symmetric Encryption\n    ",
+				"text": "How do SSL protect your data?\nData sent across the wire can be captured by anyone in the middle.\n\nPurpose of SSL/TLS is to protext the data in three ways:\n\nConfidentiality: Data is only accessible by client and server\nIntegrity: Data is not modified between client and server\nAuthetication: Client/Server are indeed who they say they are\n\nThe Client is a one who is initiating the TLS Handshake.\nWhen a client visits bank.com the bank.com provides a certificate and says i am bank.com and you can trust me.\nThen the client asks the CA to check for the bank.com certificate \n\nCertificate Authority(CA)\nGoverning Entity that issues certificates.\nTrusted by client and server\nProvides trust anchor\n  If we trust the CA, we trust what the CA trusts \n\n\n\n11. Server generates a certificate signing request(CSR)\n    CSR contsins \n11. Client wants to connect to the server securely.\n    Web Browsers already have CA Certificates installed.\n12. Client requests Server's certificate\n    Client validates Certificate is legitimate\n    Client validates that server truly owns certicate \n13. Client validates Server's Certifiacte in the SSL/TLS handshake.\n14. SSL/TLS Hanshake produces Session Keys:\n    Symmetric Encryption\n    \n\n\nSSH\nSECURE SHELL \nSSH CLient and SSH Server\nA public key is placed in the aws server and the provate key is set in the developer pc which\nconnects to the server and do the bash scripting.",
 				"font": "draw",
 				"align": "start",
 				"autoSize": true,
@@ -193,6 +190,7 @@
 			},
 			"parentId": "page:page",
 			"index": "a2",
+			"id": "shape:-KkUjS57Gngdm_VdWA5zf",
 			"typeName": "shape"
 		}
 	]
