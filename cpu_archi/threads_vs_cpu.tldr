@@ -1,0 +1,221 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 5,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 2,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 9,
+			"com.tldraw.shape.note": 8,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 179.223185069873,
+			"y": 850.868795374018,
+			"lastActivityTimestamp": 1734524582609,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:textAlign": "start"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1488,
+				"h": 754.4000244140625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.25,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:8J9eug6jfG0IvL7PIfbKL",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:8J9eug6jfG0IvL7PIfbKL"
+			],
+			"hoveredShapeId": "shape:8J9eug6jfG0IvL7PIfbKL",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": 563.0008569258171,
+			"y": -54.0339416291489,
+			"z": 0.6628726262721316,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 244.8000030517578,
+			"y": 218.40000534057617,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:AlZ7tXqZRYaKaNUpsftM_",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 267.57501220703125,
+				"text": "Threads Vs Processes",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": -263.77694012523136,
+			"y": 292.16573389095834,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0KRNdNFgwXogeFCFUrYZb",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 736.92140405313,
+				"text": "Process will run within its own isolated memory space\nand can only talk to other processes through specific \nmechanisms such as Inter-Process Communication(IPC).\nModern CPU hardware has safe guards through paging\nthat ensures the process can only read and write from\nits own memory space. The all so common Segmentation \nFault is actually originally triggered by CPU hardware via a #PF (Page Fault) due to an illegal access.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a26iz",
+			"typeName": "shape"
+		},
+		{
+			"x": 576.8434832799381,
+			"y": 289.9621248577164,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:1KCyyyisvWu9U0Xdcf7s0",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 978.3397685554813,
+				"text": "threads within the same process share the same address space. Access to the same address space can be a blessing and a curse. If a thread crashes, the state of the application may be unknown. There are no security protections in hardware preventing rogue threads from accessing other thread’s data in an unintended way. In fact, Chrome moved to running every browser tab in its own process instead of just using multiple threads. If you ever see the “Oh Snap…” in a Chrome tab, that is a process that executed something unintentional. The failed tab crashed and no longer running, but the remaining tabs can continue with business as usual",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a37w1",
+			"typeName": "shape"
+		},
+		{
+			"x": -274.19268865511225,
+			"y": 609.5291328310645,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:8J9eug6jfG0IvL7PIfbKL",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 639.0717968893123,
+				"text": "Copy-on-write (COW), also called implicit sharing or shadowing, is a resource-management technique used in programming to manage shared data efficiently. Instead of copying data right away when multiple programs use it, the same data is shared between programs until one tries to modify it. If no changes are made, no private copy is created, saving resources. A copy is only made when needed, ensuring each program has its own version when modifications occur. This technique is commonly applied to memory, files, and data structures.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a43mU",
+			"typeName": "shape"
+		}
+	]
+}
