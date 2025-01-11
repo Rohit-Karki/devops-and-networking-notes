@@ -1,0 +1,150 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 2,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 9,
+			"com.tldraw.shape.note": 8,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 874.5172675669714,
+			"y": 932.6316156778387,
+			"lastActivityTimestamp": 1736598771702,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1488,
+				"h": 754.4000244140625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.25,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:x63LQ2SvuJ3YAduDh-aYI"
+			],
+			"hoveredShapeId": "shape:x63LQ2SvuJ3YAduDh-aYI",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -149.86185098113293,
+			"y": -388.2372226818386,
+			"z": 0.6645917426140816,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 586.6481082721464,
+			"y": 160.60326021484371,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:x63LQ2SvuJ3YAduDh-aYI",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1015.9982432834634,
+				"text": "Container Networking Interface\nContainer Network Interface (CNI) is a framework for dynamically\nconfiguring networking resources. It uses a group of libraries and \nspecifications written in Go. The plugin specification defines an interface \nfor configuring the network, provisioning IP addresses, and maintaining \nconnectivity with multiple hosts.\n\n\nVirtual Extensible LAN (VXLAN) is a network virtualization technology that\ncreates a Layer 2 overlay on top of a Layer 3 network. VXLAN extends the \ncapability of VLANs by providing larger scalability, segmentation, and support \nfor multi-tenant environments in modern data centers and cloud infrastructures.\n\nKey Features of VXLAN\nLarge Address Space:\n\nVXLAN uses a 24-bit VXLAN Network Identifier (VNI), which supports up to 16 million unique segments (compared to VLAN's 4,096).\nLayer 2 Over Layer 3:\n\nIt encapsulates Layer 2 Ethernet frames in UDP packets, allowing them to traverse a Layer 3 network (IP network).\nMulti-Tenancy:\n\nVXLAN allows logical network isolation for tenants in a shared physical network, crucial for cloud and data center environments.\nEncapsulation:\n\nVXLAN packets are encapsulated using the VXLAN header, which is added to the original Ethernet frame, and then encapsulated in a UDP/IP packet.\nHow VXLAN Works\nEncapsulation Process:\n\nVXLAN encapsulates Ethernet frames in a UDP header and a VXLAN header, which contains the VNI.\nThis UDP packet is then sent over the Layer 3 network.\nVXLAN Tunnel Endpoints (VTEPs):\n\nVTEPs are responsible for encapsulating and decapsulating VXLAN traffic.\nEach VTEP resides at the edge of the physical network and connects the VXLAN overlay to the underlying infrastructure.\nBroadcast, Unknown Unicast, Multicast (BUM) Traffic:\n\nVXLAN uses multicast or other mechanisms to handle broadcast, unknown unicast, and multicast traffic within the overlay.\nControl Plane:\n\nVXLAN itself lacks a native control plane, relying on external solutions like:\nFlood-and-learn mechanism using multicast groups.\nControl-plane protocols like BGP EVPN to provide scalability and efficiency.\nVXLAN Header Structure\nThe VXLAN header includes:\n\nVXLAN Network Identifier (VNI):\n\nA 24-bit field uniquely identifying a VXLAN segment.\nFlags:\n\nIndicate valid fields and features within the VXLAN header.\nReserved Fields:\n\nReserved for future use.\nAdvantages of VXLAN\nScalability:\n\nSupports up to 16 million segments, ideal for large-scale multi-tenant networks.\nFlexibility:\n\nAllows Layer 2 extension across a Layer 3 network, enabling virtual machine (VM) mobility.\nEfficient Use of Resources:\n\nAllows traffic segmentation without requiring additional physical infrastructure.\nVendor Interoperability:\n\nVXLAN is supported by most major networking vendors",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		}
+	]
+}

@@ -48,34 +48,11 @@
 			"typeName": "page"
 		},
 		{
-			"x": 112,
-			"y": 117,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:WozzBG7kHrLsmz6sYzis0",
-			"type": "text",
-			"props": {
-				"color": "black",
-				"size": "m",
-				"w": 535.7999877929688,
-				"text": "Virtual Private Compute",
-				"font": "draw",
-				"autoSize": false,
-				"scale": 1,
-				"textAlign": "middle"
-			},
-			"parentId": "page:page",
-			"index": "a1",
-			"typeName": "shape"
-		},
-		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 416.89351080602916,
-			"y": 206.97162463458875,
-			"lastActivityTimestamp": 1736597898161,
+			"x": 1499.5876975632705,
+			"y": 220.09472459808228,
+			"lastActivityTimestamp": 1736599032908,
 			"meta": {}
 		},
 		{
@@ -124,12 +101,12 @@
 			"typeName": "instance"
 		},
 		{
-			"editingShapeId": "shape:XCeomvv1weuNxtpR_LOHU",
+			"editingShapeId": "shape:ZwkA4LjU9_7qKmMInnRFl",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:XCeomvv1weuNxtpR_LOHU"
+				"shape:ZwkA4LjU9_7qKmMInnRFl"
 			],
-			"hoveredShapeId": "shape:XCeomvv1weuNxtpR_LOHU",
+			"hoveredShapeId": "shape:ZwkA4LjU9_7qKmMInnRFl",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -139,34 +116,57 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 97.42346673182664,
-			"y": 158.3529782301718,
-			"z": 0.8523926159217957,
+			"x": 333.88200873519247,
+			"y": 342.6378315989533,
+			"z": 0.3813534577664908,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": 189.09999084472656,
-			"y": 179.79998779296875,
+			"x": 306.3999938964844,
+			"y": 215.99999618530273,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:XCeomvv1weuNxtpR_LOHU",
+			"id": "shape:r99shrQK7jVaUq8ukKiXg",
 			"type": "text",
 			"props": {
 				"color": "black",
 				"size": "m",
-				"w": 373.2250061035156,
-				"text": "AWS Security Group and NACL\n\nNetwork Access Control List\n\n ",
+				"w": 964.3540686709647,
+				"text": "AWS ECS is a fully managed container orchestration service that allows you to run Docker containers at scale. It eliminates the need to manage your own container orchestration infrastructure and provides a highly scalable, reliable, and secure environment for deploying and managing your applications.\n3. ECS Fundamentals\nTo understand ECS better, let's explore its core components:\n\nClusters:\nA cluster is a logical grouping of EC2 instances or Fargate tasks on which you run your containers. It acts as the foundation of ECS, where you can deploy your services.\n\nTask Definitions:\nTask Definitions define how your containers should run, including the Docker image to use, CPU and memory requirements, networking, and more. It is like a blueprint for your containers.\n\nTasks:\nA task represents a single running instance of a task definition within a cluster. It could be a single container or multiple related containers that need to work together.\n\nServices:\nServices help you maintain a specified number of running tasks simultaneously, ensuring high availability and load balancing for your applications.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": 1499.5876975632705,
+			"y": 203.89472383514283,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ZwkA4LjU9_7qKmMInnRFl",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1410.8125,
+				"text": "Login to ECR (replace and with your actual values)\n$ aws ecr get-login-password --region | docker login --username AWS --password-stdin .dkr.ecr..amazonaws.com\n\nBuild the Docker image (replace with your ECR repository name)\n$ docker build -t .dkr.ecr..amazonaws.com/:latest .\n\nPush the Docker image to ECR (replace with your ECR repository name)\n$ docker push .dkr.ecr..amazonaws.com/:latest",
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "a22jR",
+			"index": "a26UZ",
 			"typeName": "shape"
 		}
 	]

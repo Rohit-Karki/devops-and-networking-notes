@@ -48,34 +48,11 @@
 			"typeName": "page"
 		},
 		{
-			"x": 112,
-			"y": 117,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:WozzBG7kHrLsmz6sYzis0",
-			"type": "text",
-			"props": {
-				"color": "black",
-				"size": "m",
-				"w": 535.7999877929688,
-				"text": "Virtual Private Compute",
-				"font": "draw",
-				"autoSize": false,
-				"scale": 1,
-				"textAlign": "middle"
-			},
-			"parentId": "page:page",
-			"index": "a1",
-			"typeName": "shape"
-		},
-		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 416.89351080602916,
-			"y": 206.97162463458875,
-			"lastActivityTimestamp": 1736597898161,
+			"x": 963.2620007268118,
+			"y": 224.43398572325054,
+			"lastActivityTimestamp": 1736607198482,
 			"meta": {}
 		},
 		{
@@ -124,12 +101,12 @@
 			"typeName": "instance"
 		},
 		{
-			"editingShapeId": "shape:XCeomvv1weuNxtpR_LOHU",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:XCeomvv1weuNxtpR_LOHU"
+				"shape:YD8KY8XdTed8kD8q1vZkr"
 			],
-			"hoveredShapeId": "shape:XCeomvv1weuNxtpR_LOHU",
+			"hoveredShapeId": "shape:YD8KY8XdTed8kD8q1vZkr",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -139,34 +116,34 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 97.42346673182664,
-			"y": 158.3529782301718,
-			"z": 0.8523926159217957,
+			"x": -183.7418889067766,
+			"y": 146.14097481268436,
+			"z": 0.5942117530817068,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": 189.09999084472656,
-			"y": 179.79998779296875,
+			"x": 246.40000915527344,
+			"y": 163.20000839233398,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
 			"meta": {},
-			"id": "shape:XCeomvv1weuNxtpR_LOHU",
+			"id": "shape:YD8KY8XdTed8kD8q1vZkr",
 			"type": "text",
 			"props": {
 				"color": "black",
 				"size": "m",
-				"w": 373.2250061035156,
-				"text": "AWS Security Group and NACL\n\nNetwork Access Control List\n\n ",
+				"w": 719.9558985606262,
+				"text": "A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. \nUsually, you define a Deployment and let that Deployment manage ReplicaSets automatically.\nA ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.\nAs such, it is often used to guarantee the availability of a specified number of identical Pods.",
 				"font": "draw",
 				"textAlign": "start",
-				"autoSize": true,
+				"autoSize": false,
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "a22jR",
+			"index": "a1",
 			"typeName": "shape"
 		}
 	]

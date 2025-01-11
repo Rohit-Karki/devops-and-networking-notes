@@ -50,9 +50,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 179.223185069873,
-			"y": 850.868795374018,
-			"lastActivityTimestamp": 1734524582609,
+			"x": 1774.1123409432744,
+			"y": 1514.694738997798,
+			"lastActivityTimestamp": 1734525084614,
 			"meta": {}
 		},
 		{
@@ -103,12 +103,12 @@
 			"typeName": "instance"
 		},
 		{
-			"editingShapeId": "shape:8J9eug6jfG0IvL7PIfbKL",
+			"editingShapeId": "shape:3NC4Ks_nkY6k5VGzmdMM_",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:8J9eug6jfG0IvL7PIfbKL"
+				"shape:3NC4Ks_nkY6k5VGzmdMM_"
 			],
-			"hoveredShapeId": "shape:8J9eug6jfG0IvL7PIfbKL",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -118,9 +118,9 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": 563.0008569258171,
-			"y": -54.0339416291489,
-			"z": 0.6628726262721316,
+			"x": 280.71857949093015,
+			"y": -177.69727176073616,
+			"z": 0.3830972195224163,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -206,8 +206,8 @@
 			"props": {
 				"color": "black",
 				"size": "m",
-				"w": 639.0717968893123,
-				"text": "Copy-on-write (COW), also called implicit sharing or shadowing, is a resource-management technique used in programming to manage shared data efficiently. Instead of copying data right away when multiple programs use it, the same data is shared between programs until one tries to modify it. If no changes are made, no private copy is created, saving resources. A copy is only made when needed, ensuring each program has its own version when modifications occur. This technique is commonly applied to memory, files, and data structures.",
+				"w": 752.7986379524616,
+				"text": "Copy-on-write (COW), also called implicit sharing or shadowing, is a resource-management technique used in programming to manage shared data efficiently. Instead of copying data right away when multiple programs use it, the same data is shared between programs until one tries to modify it. If no changes are made, no private copy is created, saving resources. A copy is only made when needed, ensuring each program has its own version when modifications occur. This technique is commonly applied to memory, files, and data structures.\nCopy-on-write finds its main use in operating systems, sharing the physical memory of computers running multiple processes, in the implementation of the fork() system call. Typically, the new process does not modify any memory and immediately executes a new process, replacing the address space entirely. It would waste processor time and memory to copy all of the old process's memory during the fork only to immediately discard the copy\n\nCopy-on-write can be implemented efficiently using the page table by marking certain pages of memory as read-only and keeping a count of the number of references to the page. When data is written to these pages, the operating-system kernel intercepts the write attempt and allocates a new physical page, initialized with the copy-on-write data, although the allocation can be skipped if there is only one reference. The kernel then updates the page table with the new (writable) page, decrements the number of references, and performs the write. The new allocation ensures that a change in the memory of one process is not visible in another's.",
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": false,
@@ -215,6 +215,75 @@
 			},
 			"parentId": "page:page",
 			"index": "a43mU",
+			"typeName": "shape"
+		},
+		{
+			"x": 618.6224453093232,
+			"y": 619.8368517671099,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Mi-pMCjeFaQg6-Uxy2byx",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1077.539138726813,
+				"text": "Doesn’t using processes require slow context switches?\nprocesses require context switches, but so do threads.\nA thread also has execution context attached to it which consists of it’s various CPU register values (such as EAX, EBX… in x86), among other things which needs to be stored before the next thread can start executing. In fact, modern SIMD code such as many of your video encoding and compression algorithms to watch  your favorite Netflix shows in HD shows use some pretty large registers which would need to write to memory. In fact, the latest incarnation of AVX consists of 32 64 byte wide registers",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 0.9885292083872617
+			},
+			"parentId": "page:page",
+			"index": "a53Yv",
+			"typeName": "shape"
+		},
+		{
+			"x": 614.788194499816,
+			"y": 936.1291812055717,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:IhmJinThIoeO5yUCXPfM6",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1162.560297229197,
+				"text": "When referring to processes being slower than threads, usually the reference is not just the context switch itself but flushing entries in the Translation Lookaside Buffers (TLBs). TLBs holds cached translations of the paging mechanism we were referring to earlier. Because a new process will execute in its own memory space, it cannot use the old processes’s translations and will start fresh. This means the TLB will be cold for the new process. If a translation is not in the TLB, before the memory access can complete, a Page Miss Handler (PMH) needs to walk the page tables level by level. Page table walks are heavy pointer chasing algorithms and can slow load latency. There are shortcuts to minimize the number of levels required to walk, but the end issue is that a cold TLB can result in load latencies far greater than a warm TLB. This occurs even if the accessed variable is already in a CPU Cache somewhere (which we talk about later)\n\nSo the end conclusion is that the context switch for a process may not be a whole lot longer, but there can be lingering effects that slow down even post context.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a63p8",
+			"typeName": "shape"
+		},
+		{
+			"x": 615.13760196316,
+			"y": 1404.523813452687,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:3NC4Ks_nkY6k5VGzmdMM_",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1158.9747389801144,
+				"text": "Processes are not the only thing that can under go this cold TLB. Threads, if not scheduled on the same logical CPU (CPU Affinity), can also undergo this. Which brings up the next point: There are only a fixed number of logical CPUs that your application can run on. While a modern operating system has many processes and threads that can appear running simultaneously in various blocked and waits states, a CPU can only run a fixed number of threads at a time in reality. This is true regardless if the threads are in the same process or not. As you launch more threads then you can actively run, the operating system has to preemptively context switch. If you just spawn thread after thread for each task thinking it will run all in parallel, you may be surprised that you may be hurting performance more than running a small number of threads in a thread pool.\n\nIn general, a large number of threads can cause something called thrashing. Thrashing is a generic term used when the CPU starts swapping or moving resources around more than performing actual execution. A CPU has limited resource sizes, the TLBs, the caches, even the page tables allocated in memory are all limited. As you starting switching between more threads, you can put pressure on these subsystems causing evictions of still hot data, which can be detrimental to performance. Many asynchronous web frameworks are by default configured to match their worker thread pool to the real number of logical cores, or they may add a few extra for blocking, but still within an order of magnitude. Think of Uber drivers. Sometimes it’s easier and quicker to pick up passengers for longer trips and just drive for awhile then to be constantly picking up new passengers and dropping old ones off. The number of passengers is your fixed resources such as logical processors, cache size, and TLBs. If you pick up new passengers, you have to get rid of the old ones first to make room for the new ones. This in and out behavior is thrashing if you start finding yourself waiting for unloading and loading rather than just driving (doing work or execution)",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a72VB",
 			"typeName": "shape"
 		}
 	]
