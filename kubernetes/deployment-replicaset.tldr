@@ -48,11 +48,34 @@
 			"typeName": "page"
 		},
 		{
+			"x": 50.62008770571333,
+			"y": 24.07758250743882,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:YD8KY8XdTed8kD8q1vZkr",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 719.9558985606262,
+				"text": "A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. \nUsually, you define a Deployment and let that Deployment manage ReplicaSets automatically.\nA ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.\nAs such, it is often used to guarantee the availability of a specified number of identical Pods.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 963.2620007268118,
-			"y": 224.43398572325054,
-			"lastActivityTimestamp": 1736607198482,
+			"x": 264.36253117116587,
+			"y": 117.14122349752708,
+			"lastActivityTimestamp": 1736612733752,
 			"meta": {}
 		},
 		{
@@ -116,35 +139,12 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"x": -183.7418889067766,
-			"y": 146.14097481268436,
-			"z": 0.5942117530817068,
+			"x": 242.29218369334578,
+			"y": 197.58982751856198,
+			"z": 0.6742264427458559,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
-		},
-		{
-			"x": 246.40000915527344,
-			"y": 163.20000839233398,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:YD8KY8XdTed8kD8q1vZkr",
-			"type": "text",
-			"props": {
-				"color": "black",
-				"size": "m",
-				"w": 719.9558985606262,
-				"text": "A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. \nUsually, you define a Deployment and let that Deployment manage ReplicaSets automatically.\nA ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.\nAs such, it is often used to guarantee the availability of a specified number of identical Pods.",
-				"font": "draw",
-				"textAlign": "start",
-				"autoSize": false,
-				"scale": 1
-			},
-			"parentId": "page:page",
-			"index": "a1",
-			"typeName": "shape"
 		}
 	]
 }

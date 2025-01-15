@@ -48,82 +48,6 @@
 			"typeName": "page"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": 1747.1050635115248,
-			"y": 500.7375338630727,
-			"lastActivityTimestamp": 1736604391118,
-			"meta": {}
-		},
-		{
-			"followingUserId": null,
-			"opacityForNextShape": 1,
-			"stylesForNextShape": {},
-			"brush": null,
-			"scribbles": [],
-			"cursor": {
-				"type": "default",
-				"rotation": 0
-			},
-			"isFocusMode": false,
-			"exportBackground": true,
-			"isDebugMode": false,
-			"isToolLocked": false,
-			"screenBounds": {
-				"x": 0,
-				"y": 0,
-				"w": 1488,
-				"h": 754.4000244140625
-			},
-			"insets": [
-				false,
-				false,
-				true,
-				false
-			],
-			"zoomBrush": null,
-			"isGridMode": false,
-			"isPenMode": false,
-			"chatMessage": "",
-			"isChatting": false,
-			"highlightedUserIds": [],
-			"isFocused": true,
-			"devicePixelRatio": 1.25,
-			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
-			"openMenus": [],
-			"isChangingStyle": false,
-			"isReadonly": false,
-			"meta": {},
-			"duplicateProps": null,
-			"id": "instance:instance",
-			"currentPageId": "page:page",
-			"typeName": "instance"
-		},
-		{
-			"editingShapeId": null,
-			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:ldOxAX4Pj6DJ1O_xiXVSF"
-			],
-			"hoveredShapeId": "shape:ldOxAX4Pj6DJ1O_xiXVSF",
-			"erasingShapeIds": [],
-			"hintingShapeIds": [],
-			"focusedGroupId": null,
-			"meta": {},
-			"id": "instance_page_state:page:page",
-			"pageId": "page:page",
-			"typeName": "instance_page_state"
-		},
-		{
-			"x": 1404.5556906133352,
-			"y": 762.5263383529389,
-			"z": 0.32313123266239596,
-			"meta": {},
-			"id": "camera:page:page",
-			"typeName": "camera"
-		},
-		{
 			"meta": {},
 			"id": "asset:-1362623529",
 			"type": "image",
@@ -197,6 +121,105 @@
 			},
 			"parentId": "page:page",
 			"index": "a23SS",
+			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 3518.179992491565,
+			"y": 368.0842632836293,
+			"lastActivityTimestamp": 1736613359037,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1488,
+				"h": 754.4000244140625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.25,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:AncnCarIV1_1anPTgVhvV"
+			],
+			"hoveredShapeId": "shape:AncnCarIV1_1anPTgVhvV",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -1869.2733788929036,
+			"y": 525.4265512000145,
+			"z": 0.47207041198970084,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": 2500.953223589366,
+			"y": 71.06017408714422,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:AncnCarIV1_1anPTgVhvV",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1011.9711372741292,
+				"text": "Horizontal Pod Autoscaler (HPA) + Cluster Autoscaler (CA)\nHPA:\nScales the number of pods in a deployment, replica set, or stateful set based on workload metrics (e.g., CPU or memory usage, or custom metrics).\nCA:\nScales the number of nodes in a cluster by adding or removing nodes when pods cannot be scheduled due to insufficient resources.\n\nHow They Work Together\nScenario:\n\nHPA tries to scale out pods to handle increased workload.\nIf the cluster lacks resources (e.g., CPU, memory) to accommodate new pods, they remain in a Pending state.\nCluster Autoscaler to the Rescue:\n\nCA detects that pods are unschedulable due to insufficient node resources.\nIt provisions new nodes to the cluster until the pods can be scheduled.\nScaling Down:\n\nWhen workload decreases:\nHPA reduces the number of pods.\nCA detects underutilized nodes and removes them (after ensuring no running pods are disrupted).",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a385L",
 			"typeName": "shape"
 		}
 	]
