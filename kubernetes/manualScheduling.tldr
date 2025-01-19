@@ -1,0 +1,199 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 4,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 25,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.asset.image": 5,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.text": 2,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 2,
+			"com.tldraw.shape.geo": 9,
+			"com.tldraw.shape.note": 8,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.frame": 0,
+			"com.tldraw.shape.arrow": 5,
+			"com.tldraw.shape.highlight": 1,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.image": 4,
+			"com.tldraw.shape.video": 2,
+			"com.tldraw.binding.arrow": 0
+		}
+	},
+	"records": [
+		{
+			"gridSize": 10,
+			"name": "",
+			"meta": {},
+			"id": "document:document",
+			"typeName": "document"
+		},
+		{
+			"meta": {},
+			"id": "page:page",
+			"name": "Page 1",
+			"index": "a1",
+			"typeName": "page"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 1925.5730265848874,
+			"y": 451.5479156202214,
+			"lastActivityTimestamp": 1736943672691,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:color": "black",
+				"tldraw:font": "draw"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1488,
+				"h": 754.4000244140625
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1.25,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:ozntPn8wW-E8Mtljkyljf"
+			],
+			"hoveredShapeId": "shape:ozntPn8wW-E8Mtljkyljf",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -432.95950469601974,
+			"y": 134.21610444160626,
+			"z": 0.3226555294059389,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"x": -182.7636692170919,
+			"y": 234.38141501637654,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:e5fkMXNKVJdWE0Tw-Ke6F",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1433.6822972029022,
+				"text": "Kubernetes places pods randomly across the available nodes in the cluster. However, there are many scenarios where you may need to control the placement of your pods on specific nodes.\n\nFor example, you may want to place pods that require specific hardware resources (e.g., GPUs) on nodes that have those resources available or avoid placing pods on nodes that are running other critical workloads.\n\nKubernetes provides a number of features for controlling pod placement, including: Node selectors, Affinity and anti-affinity rules, Taints and tolerations.\n\nRunning Pods on Nodes with Dedicated Hardware\nSome Kubernetes applications may have specific hardware requirements. For example, pods running machine learning jobs may require high-performance GPUs instead of CPUs, while Elasticsearch pods may perform better on SSDs than HDDs. As a result, it is best practice for any resource-aware Kubernetes cluster management strategy to assign pods to the nodes with the appropriate hardware\n\n\nManual scheduling in Kubernetes involves assigning a pod to a specific node rather than letting the scheduler decide.\n\nKey Points:\nnodeName Field: Use this field in the pod specification to specify the node where the pod should run.\nNo Scheduler Involvement: When nodeName is specified, the scheduler bypasses the pod, and it’s directly assigned to the given node.\n\nNote: Kubernetes will place the pod on worker-node-1 with the above configuration\n\napiVersion: v1\nkind: Pod\nmetadata:\n  name: manual-scheduled-pod\nspec:\n  nodeName: worker-node-1\n  containers:\n  - name: nginx\n    image: nginx",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a1",
+			"typeName": "shape"
+		},
+		{
+			"x": -1105.2707482413166,
+			"y": 233.11824452120948,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:NUsKDdhZ2BYDXToHFzwiR",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 868.3713661018771,
+				"text": "Static Pods\nStatic Pods are special types of pods managed directly by the kubelet on each node rather than through the Kubernetes API server\n\nKey Characteristics of Static Pods:\nNot Managed by the Scheduler: Unlike deployments or replicasets, the Kubernetes scheduler does not manage static pods.\nDefined on the Node: Configuration files for static pods are placed directly on the node's file system, and the kubelet watches these files.\nSome examples of static pods are: ApiServer, Kube-scheduler, controller-manager, ETCD etc\nManaging Static Pods:\nSSH into the Node: You will gain access to the node where the static pod is defined.(Mostly the control plane node)\nModify the YAML File: Edit or create the YAML configuration file for the static pod.\nRemove the Scheduler YAML: To stop the pod, you must remove or modify the corresponding file directly on the node.\nDefault location\": is usually /etc/kubernetes/manifests/; you can place the pod YAML in the directory, and Kubelet will pick it for scheduling",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a274R",
+			"typeName": "shape"
+		},
+		{
+			"x": 1404.2834234028362,
+			"y": -307.5989514381241,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ozntPn8wW-E8Mtljkyljf",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 1430.823753812064,
+				"text": "Taints: Putting Up Fences 🚫\nThink of taints as \"only you are allowed\" signs on your Kubernetes nodes. A taint marks a node with a specific characteristic, such as \"gpu=true\". By default, pods cannot be scheduled on tainted nodes unless they have a special permission called toleration. When a toleration on a pod matches with the taint on the node then only that pod will be scheduled on that node\n\nTolerations: Permission Slips for Pods ✅\nToleration allows a pod to say, \"Hey, I can handle that taint. Schedule me anyway!\" You define tolerations in the pod specification to let them bypass the taints.\n\nTaints & Tolerations in Action 🎬\nHere’s a breakdown of the commands to manage taints and tolerations:\n\nTainting a Node:\n        kubectl taint nodes node1 key=gpu:NoSchedule\n\nThis command taints node1 with the key \"gpu\" and the effect \"NoSchedule.\" Pods without a toleration for this taint won't be scheduled there.\n\nTo remove the taint , you add - at the end of the command , like below.\n\n       kubectl taint nodes node1 key=gpu:NoSchedule-\n\n\nAdding toleration to the pod:\napiVersion: v1\nkind: Pod\nmetadata:\n  labels:\n    run: redis\n  name: redis\nspec:\n  containers:\n  - image: redis\n    name: redis\n  tolerations:\n  - key: \"gpu\"\n    operator: \"Equal\"\n    value: \"true\"\n    effect: \"NoSchedule\"\nNote: This pod specification defines a toleration for the \"gpu\" taint with the effect \"NoSchedule.\" This allows the pod to be scheduled on tainted nodes.\n\nLabels vs Taints/Tolerations\nLabels group nodes based on size, type,env, etc. Unlike taints, labels don't directly affect scheduling but are useful for organizing resources.\n\nLimitations to Remember 🚧\nTaints and tolerations are powerful tools, but they have limitations. They cannot handle complex expressions like \"AND\" or \"OR.\" So, what do we use in that case? We use a combination of Taints, tolerance, and Node affinity.",
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": false,
+				"scale": 1
+			},
+			"parentId": "page:page",
+			"index": "a3BAW",
+			"typeName": "shape"
+		}
+	]
+}

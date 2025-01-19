@@ -1,0 +1,27 @@
+# The manifest deploys three replicas of the nginx:latest container image.
+# In the metadata.labels field, an app: nginx label is applied—this will be
+# referenced by your Services in the following steps. The ports.containerPort field
+# within the Pod spec template is used to indicate that the Pods will be exposing port 80,
+# the default NGINX web server port.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80

@@ -1,0 +1,18 @@
+# There are a few points to note in the manifest:
+# The spec.type field is set to ClusterIP as we’re creating a ClusterIP service.
+# The spec.selector field selects the NGINX Pods using the app: nginx label applied in the Deployment’s manifest.
+# The spec.ports field specifies that traffic to port 8080 on the Service’s Cluster IP address will be routed to port 80 at your Pods.
+
+# kubectl apply -f clusterip.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-clusterip
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx
+  ports:
+    - port: 8080
+      targetPort: 80
