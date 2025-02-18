@@ -1,0 +1,48 @@
+# ansible-playbook devenv.yml --ask-become-pass
+
+- hosts: localhost
+  become: yes
+  vars:
+    - user: "maxine"
+    - dotfiles: "https://github.com/Rohit-Karki/"
+    - ssh_key: ".ssh/id_rsa"
+
+  tasks:
+    - name: "Install system apps"
+      apt:
+        name:
+          - vim
+          - bat
+          - exa
+          - podman
+        state: latest
+    - name: "Install Python packages"
+      pip:
+        name:
+          - poetry
+        state: latest
+
+
+  - name: "Copy .vimrc"
+      copy:
+        src: ./tmp-dotfiles/.vimrc
+        dest: "/home/{{ user }}/.vimrc"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        mode: '0644'
+
+    - name: "Copy .aliases"
+      copy:
+        src: ./tmp-dotfiles/.aliases
+        dest: "/home/{{ user }}/.aliases"
+        owner: "{{ user }}"
+        group: "{{ user }}"
+        mode: '0644'
+
+    - name: "Load aliases in .bashrc file"
+      blockinfile:
+        path: "/home/{{ user }}/.bashrc"
+        block: |
+          if [ -f ~/.aliases ]; then
+            source ~/.aliases
+          fi

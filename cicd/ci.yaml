@@ -1,0 +1,53 @@
+name: Continuous Integration
+
+# This workflow is triggered whenever a new PR is created on the main branch
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      # Only run when there is a change in web folder
+      - "web/**"
+
+  push:
+    branches:
+      - main
+    paths:
+      # Only run when there is a change in web folder
+      - "web/**"
+
+  jobs:
+    test:
+      name: "Run Unit Tests"
+      defaults:
+        run:
+          shell: bash
+          working_directory: ./web
+      runs_on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v2
+          name: "Checkout repository"
+
+        - name: "Install dependencies"
+          run: npm install
+
+        - name: "Run Tests"
+          run: npm run test
+
+  lint:
+    name: "Run Linter"
+    defaults:
+      run:
+        shell: bash
+        working_directory: ./web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: "Checkout repository"
+
+      - name: "Install dependencies"
+        run: npm install
+
+      - name: "Run Linter"
+        run: npx standard -v
