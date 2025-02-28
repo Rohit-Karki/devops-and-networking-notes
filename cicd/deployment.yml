@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flaskapp
+  name: flaskapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flaskapp
+    spec:
+      containers:
+        - image: rohit07/images:app-7
+          name: flaskapp
+          resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-service
+  labels:
+    app: flask-service
+spec:
+  type: NodePort
+  ports:
+    - nodePort: 30001
+      port: 80
+      targetPort: 5000
+  selector:
+    app: flaskdemo
